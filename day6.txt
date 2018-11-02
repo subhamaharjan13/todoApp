@@ -1,0 +1,8 @@
+delete ko route banaune
+note ko id pathaidine
+
+index
+
+mongoose ko edit try gara
+
+<a href='/deletenote/<%= note._id%>'>

@@ -1,0 +1,26 @@
+mongo command prompt ma- use database1 
+-show dbs
+-db.newCollection.insertOne({name: 'subha'})
+-show dbs
+-db.newCollection.find()
+-db.newCollection.find({name: 'subha'})
+these are the simple commands used in mongo
+-------------------------------------------------------------------------------------------
+feri command prompt ko projects ma -npm install mongoose
+mongo db ra nodejs lai connect garne package is mongoose
+package install garesi require garna parxa
+go to app.js then
+sabai data lai esma store gareko hunxa - mongodb://localhost/'dbname'
+euta file ko data file ma pathauna paryo vane export garinxa
+-----------
+addnote ko model banaune
+title:string
+note
+date
+note database ma save hune gari
+
+
+users jasari notes banaune..new db banaune haina new collection banaune
+
+
+sab project git ma push garera link nishla di lai pathaune

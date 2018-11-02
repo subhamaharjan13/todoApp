@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Viewnote</title>
+</head>
+<body>
+	<style type="text/css">
+		body {
+		    background-color: #44AB8F;
+		}
+		.box {
+			margin: 0 auto;
+			margin-top: 100px;
+			width: 330px;
+			border: 1px solid;
+    		padding: 10px;
+    		box-shadow: 7px 15px #AB4444;
+    		background-color: #80E6EC;
+		}
+		textarea {
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		.btn {
+		    background-color: #4CAF50;
+		    border: none;
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		}
+		/*#btn1 {
+			display: block;
+			margin: 0 auto;
+			width: 206px; 
+		}
+		#submit {
+			display: block;
+			margin: 0 auto;
+			margin-top: 10px;
+			width: 206px;
+			background-color: #F2A865;
+		}*/
+	</style>
+	<div class="form-main">
+		<!-- <form method="GET" action="/viewnote"> -->
+			<% notes.forEach(function(note, i){ %>
+			<div class="box">
+				<a href='/deletenote/<%= note._id%>'>
+				<p><strong><%= note.title %></strong> <%= note.notes %></p>
+<!-- 				<textarea id="textbox" rows="10" columns="100" placeholder="text label"></textarea> -->
+					<div id="btn1">
+					<button id='edit' class="btn">Edit</button>
+					<a href='/deletenote/<%= note._id%>' id="delete" class="btn">DELETE </a>
+				</div>
+				<!-- <button id='submit' class="btn" type="submit">Add</button> -->
+			</div>
+			<% }) %>
+	<!-- </form> -->
+	</div>	
+</body>
+</html>
